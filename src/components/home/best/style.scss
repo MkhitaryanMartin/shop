@@ -1,0 +1,22 @@
+.best{
+    background-color: #0F172A;
+    padding: 80px;
+}
+.best__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best__title{
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 61.6px;
+}
+
+.best__cards-block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
