@@ -1,0 +1,31 @@
+.collectible__container, .collectible__icon-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+// .collectible{
+//    background-color: #FEF3C7;
+//    background-position: right top;
+//    background-size: 60px;
+// }
+
+.collectible__icon-block{
+    margin-top: 60px;
+    & div {
+        max-width: 400px;
+    }
+}
+
+.collectible-title{
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 79px;
+}
+
+.collectible__text-block__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 30px 0;
+    max-width: 714px;
+}

@@ -1,0 +1,16 @@
+.background{
+    background-size: 40px; 
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.trophy{
+    background-image: url("../../assets/img/rectangle-trophy.png");
+}
+
+.tunnel{
+    background-image: url("../../assets/img/rectangle-tunnel.png");
+}
+
+.tv{
+    background-image: url("../../assets/img/rectangle-tv.png");
+}
