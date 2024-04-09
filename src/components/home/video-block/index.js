@@ -12,11 +12,11 @@ export default function VideoBlock(){
             </div>
            <div className="video-block__container">
            <div>
-                <h2>Why join us</h2>
+                <h2 className="heading-2">Why join us</h2>
               <div className="video-block__text-block">
-              <p><CheckIcon fontSize="small" sx={{color:"#15803D",fontSize:"16px"}}/>Est et in pharetra magna adipiscing ornare aliquam.</p>
-                <p><CheckIcon  fontSize="small" sx={{color:"#15803D",fontSize:"16px"}}/>Tellus arcu sed consequat ac velit ut eu blandit.</p>
-                <p><CheckIcon  fontSize="small" sx={{color:"#15803D",fontSize:"16px"}}/>Ullamcorper ornare in et egestas dolor orci.</p>
+              <p className="body-xl"><CheckIcon fontSize="small" sx={{color:"#15803D",fontSize:"16px"}}/>Est et in pharetra magna adipiscing ornare aliquam.</p>
+                <p className="body-xl"><CheckIcon  fontSize="small" sx={{color:"#15803D",fontSize:"16px"}}/>Tellus arcu sed consequat ac velit ut eu blandit.</p>
+                <p className="body-xl"><CheckIcon  fontSize="small" sx={{color:"#15803D",fontSize:"16px"}}/>Ullamcorper ornare in et egestas dolor orci.</p>
               </div>
               <Button>Sign up now</Button>
             </div>

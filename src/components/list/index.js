@@ -3,7 +3,7 @@ export default function List({list, className=""}){
         <ul className={className}>
             {
                 list.map((item)=>{
-                    return  <li><a href="#" key={item}>{item}</a></li>
+                    return  <li key={item}><a href="#" >{item}</a></li>
                 })
             }
         </ul>

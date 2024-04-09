@@ -1,8 +1,7 @@
 .comment-card{
-    max-width: 384px;
-    min-width: 280px;
+    min-width: 384px;
     padding: 32px;
-    height: 300px;
+    height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,4 +28,7 @@
 }
 .comment-card__text{
     margin: 16px 0;
+}
+.job-title{
+    color: #475569;
 }

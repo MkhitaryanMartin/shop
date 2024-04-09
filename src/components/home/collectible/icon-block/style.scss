@@ -1,8 +1,12 @@
-.collectible__icon-block{
+.collectible__icon-block {
     margin-top: 80px;
     padding: 80px 0;
-    & div {
+ div {
         max-width: 373px;
         font-size: 18px;
+
+        & > :nth-child(2) {
+            margin: 16px 0;
+        }
     }
 }

@@ -5,8 +5,9 @@ const Button = ({
     children,
     variant="",
     color="",
+    className
 }) => {
-    return <button className={`button ${variant} ${color}`}>{children}</button>;
+    return <button className={`button ${variant} ${color} ${className}`}>{children}</button>;
 };
 
 export default Button;

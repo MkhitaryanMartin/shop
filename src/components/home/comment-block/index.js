@@ -8,7 +8,7 @@ export default function CommentBlock(){
     return (
         <section className="comments-block">
             <div className="comments-block__title-block">
-                <h2>Because they love us</h2>
+                <h2 className="heading-2 ">Because they love us</h2>
                 <div></div>
             </div>
             <div className="comments">
