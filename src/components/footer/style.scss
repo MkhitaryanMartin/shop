@@ -1,0 +1,21 @@
+.footer{
+    padding: 48px 80px;
+    background-color: #334155;
+    a,p{
+        color: white
+    }
+}
+.footer__link-block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    
+}
+
+.footer__addres-block{
+    display: flex;
+    padding: 37px 0;
+}
+.footer__addres-block__link-block{
+    display: flex;
+}

@@ -4,6 +4,7 @@ import Best from './best';
 import VideoBlock from './video-block';
 import CommentBlock from './comment-block';
 import Collection from './collection';
+import Collectors from './collectors';
 
 const HomeContainer = () => {
     return (
@@ -13,6 +14,7 @@ const HomeContainer = () => {
             <VideoBlock/>
             <CommentBlock/>
             <Collection/>
+            <Collectors/>
         </div>
     );
 };

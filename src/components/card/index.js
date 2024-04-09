@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card as MUICard, CardMedia, CardContent, CardActions, Typography } from '@mui/material';
+import { Card as MUICard, CardMedia, CardContent, CardActions, Typography, CardHeader } from '@mui/material';
 
 
 export default function Card({
@@ -10,7 +10,9 @@ export default function Card({
     children,
     background="inherit",
     color="white",
-    justifyContent="center"
+    justifyContent="center",
+    headerTitle="",
+    subTitle=""
 }) {
     return (
         <MUICard sx={{  boxShadow: 
@@ -20,6 +22,10 @@ export default function Card({
             position: "relative",
             zIndex: "1"
             }}>
+            {headerTitle && <div>
+                <p>{subTitle}</p>
+                <h4>{headerTitle}</h4>
+                </div>}
             <CardMedia
                 component="img"
                 height="194"
