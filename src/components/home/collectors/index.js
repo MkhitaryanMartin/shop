@@ -41,7 +41,7 @@ return(
        </div>
        <div className="collectors__fotter">
         <h2 className="heading-2">Collect More Sneakers Today</h2>
-        <Button>Sign up now</Button>
+        <Button variant="medium" className="button-xl"><span>Sign up now</span></Button>
        </div>
     </section>
 )

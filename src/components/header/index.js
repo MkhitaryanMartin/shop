@@ -9,7 +9,7 @@ export default function Header() {
                 <a href="#" className="heading-5">Collers</a>
                 <ul className="header__list">
                     {links.map((link) => <li key={link}><a className="button-medium" href="#" key={link}>{link}</a></li>)}
-                    <li><Button variant="small">Sign up now</Button></li>
+                    <li><Button className="button-medium" variant="small">Sign up now</Button></li>
                 </ul>
             </nav>
         </header>

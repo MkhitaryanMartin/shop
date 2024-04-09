@@ -14,7 +14,7 @@ export default function Collectible() {
                 <h1 className="collectible-title heading-1-medium">Collectible Sneakers</h1>
                 <p className="collectible__text-block__text body-large">Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet.</p>
                 <div className="collectible__button-block">
-                    <Button>Sign up now</Button>
+                    <Button className="button-medium"><span className="button_padding">Sign up now</span></Button>
                     <Button variant="text"><PlayCircleIcon/> <span>Watch Demo</span></Button>
                 </div>
             </div>

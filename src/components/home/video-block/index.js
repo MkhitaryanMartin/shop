@@ -18,7 +18,7 @@ export default function VideoBlock(){
                 <p className="body-xl"><CheckIcon  fontSize="small" sx={{color:"#15803D",fontSize:"16px"}}/>Tellus arcu sed consequat ac velit ut eu blandit.</p>
                 <p className="body-xl"><CheckIcon  fontSize="small" sx={{color:"#15803D",fontSize:"16px"}}/>Ullamcorper ornare in et egestas dolor orci.</p>
               </div>
-              <Button>Sign up now</Button>
+              <Button className="button-large">Sign up now</Button>
             </div>
             <div className="video-block__img-block">
                 <img src={video} alt="video"/>

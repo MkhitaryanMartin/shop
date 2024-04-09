@@ -1,15 +1,15 @@
 import React from 'react';
 import Button from '../../button';
-import "./style.scss";
 import { bestData } from '../../../assets/data';
 import Card from './card';
+import "./style.scss";
 
 const Best = () => {
     return (
         <section className='best'>
             <div className='best__header'>
                 <h2 className='best__title heading-2'>The best of the best</h2>
-                <Button variant='medium'>Sign up now</Button>
+                <Button variant='medium' className="button-xl">Sign up now</Button>
             </div>
             <div className='best__cards-block'>
               {
