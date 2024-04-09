@@ -21,6 +21,11 @@ const Best = () => {
                     })
                 }
               </div>
+              <div className='pink-square pink-square_position position'></div>
+              <div className='blue-square blue-square_position position'></div>
+              <div className='brown-square brown-square_position position'></div>
+              <div className='purple-square purple-square_position position'></div>
+              <div className='green-square green-square_position position'></div>
         </section>
     );
 };

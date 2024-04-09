@@ -1,22 +1,60 @@
-.best{
-    background-color: #0F172A;
+@import url("../../../styles/figure.css");
+
+.best {
     padding: 80px;
+    position: relative;
+    background-color: #0F172A;
+
 }
-.best__header{
+
+.best__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.best__title{
+.best__title {
     color: #FFFFFF;
     font-weight: 800;
     font-size: 56px;
     line-height: 61.6px;
 }
 
-.best__cards-block{
+.best__cards-block {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
+}
+
+.position{
+    position: absolute;
+}
+
+.pink-square_position {
+    top: 380px;
+    left: 45px;
+
+}
+
+.blue-square_position {
+    top: 200px;
+    left: 602px;
+
+}
+
+.green-square_position {
+    top: 257px;
+    right: 33px;
+}
+
+.brown-square_position {
+    bottom: 110px;
+    right: 610px;
+
+}
+
+.purple-square_position {
+    bottom: 56px;
+    right: 176px;
+
 }

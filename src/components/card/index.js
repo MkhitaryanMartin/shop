@@ -3,7 +3,7 @@ import { Card as MUICard, CardMedia, CardContent, CardActions, Typography } from
 
 
 export default function Card({
-    image,
+    image='',
     alt = "img",
     title = "",
     text = "",
@@ -14,7 +14,12 @@ export default function Card({
 }) {
     return (
         <MUICard sx={{  boxShadow: 
-            "0px 0px 15px 0px rgba(255, 255, 255, 0.07),0px 25px 50px -12px rgba(255, 255, 255, 0.25)", maxWidth:"394px", borderRadius:"10px"}}>
+            "0px 0px 15px 0px rgba(255, 255, 255, 0.07),0px 25px 50px -12px rgba(255, 255, 255, 0.25)", 
+            maxWidth:"394px",
+            borderRadius:"10px",
+            position: "relative",
+            zIndex: "1"
+            }}>
             <CardMedia
                 component="img"
                 height="194"
