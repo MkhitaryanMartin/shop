@@ -1,0 +1,32 @@
+.comment-card{
+    max-width: 384px;
+    min-width: 280px;
+    padding: 32px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 0px 6px 0px #00000012,
+     0px 10px 15px -3px #0000001A;
+     margin: 0 12px 0 12px;
+     background: #FFFFFF;
+
+
+}
+.comment-card__logo{
+    display: flex;
+    align-items: center;
+    span{
+        margin-left: 5px;
+    }
+}
+.comment-card__avatar-block{
+    display: flex;
+    align-items: center;
+
+}
+.comment-card__text{
+    margin: 16px 0;
+}

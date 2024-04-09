@@ -3,6 +3,7 @@ import Collectible from './collectible';
 import Best from './best';
 import VideoBlock from './video-block';
 import CommentBlock from './comment-block';
+import Collection from './collection';
 
 const HomeContainer = () => {
     return (
@@ -11,6 +12,7 @@ const HomeContainer = () => {
             <Best/>
             <VideoBlock/>
             <CommentBlock/>
+            <Collection/>
         </div>
     );
 };

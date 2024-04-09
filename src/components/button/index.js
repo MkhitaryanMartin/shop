@@ -4,7 +4,7 @@ import "./style.scss"
 const Button = ({
     children,
     variant="",
-    color=""
+    color="",
 }) => {
     return <button className={`button ${variant} ${color}`}>{children}</button>;
 };

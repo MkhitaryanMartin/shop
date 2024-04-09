@@ -1,0 +1,18 @@
+.comments{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 40px;
+}
+.comments-block__title-block{
+    margin: 80px 80px 40px 80px;
+}
+.yelow-background{
+    position: absolute;
+    width: 95%;
+    height: 310px;
+    background-color: #FDE68A;
+    left: 2.5%;
+    top: 0;
+    z-index: -1;    
+}
