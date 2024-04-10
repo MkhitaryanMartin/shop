@@ -2,6 +2,7 @@ import { footerData } from "../../assets/data";
 import List from "../list";
 import AppStoreIcon from "../svgs/app-store";
 import GooglePlayIcon from "../svgs/google-play";
+import LanguageIcon from '@mui/icons-material/Language';
 import "./style.scss";
 
 export default function Footer(){
@@ -29,7 +30,7 @@ export default function Footer(){
                     <p>Terms</p>
                     <p>Privacy</p>
                     <p>Contact</p>
-                    <p>EN</p>
+                    <p><LanguageIcon fontSize="small" sx={{mr:"5px"}}/> En</p>
                 </div>
             </div>
         </footer>
