@@ -10,7 +10,7 @@ const HomeContainer = () => {
     return (
         <div>
             <Collectible/>
-            {/* <Best/> */}
+            <Best/>
             <VideoBlock/>
             <CommentBlock/>
             <Collection/>

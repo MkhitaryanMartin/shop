@@ -11,14 +11,12 @@
      0px 10px 15px -3px #0000001A;
      margin: 0 12px 0 12px;
      background: #FFFFFF;
-
-
 }
 .comment-card__logo{
     display: flex;
     align-items: center;
     span{
-        margin-left: 5px;
+        margin-left: 10px;
     }
 }
 .comment-card__avatar-block{
@@ -31,4 +29,16 @@
 }
 .job-title{
     color: #475569;
+}
+
+@media screen and (max-width:450px) {
+    .comment-card{
+        min-width: 270px;
+        height: auto;
+        padding: 15px 15px;
+        text-align: center;
+    }
+    .comment-card__logo{
+       justify-content: center;
+    }
 }

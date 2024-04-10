@@ -23,7 +23,6 @@ export default function Footer(){
             </div>
            </div>
             </div>
-            <hr/>
             <div className="footer__addres-block">
                 <p className="body-medium">Collers @ 2023. All rights reserved.</p>
                 <div className="footer__addres-block__link-block body-medium">

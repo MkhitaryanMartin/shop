@@ -9,6 +9,7 @@ import TuneIcon from '@mui/icons-material/Tune';
 import IconButton from "./IconButton";
 import map from "../../../assets/img/waves-section.png"
 import "./style.scss"
+import Scroller from "../../scroller";
 
 export default function Collection() {
     return (
@@ -20,14 +21,15 @@ export default function Collection() {
             </p>
            </div>
             <div className="collection__filter-block">
-                <div className="collection__icon-block">
-                    <IconButton><SearchIcon /> <span className="body-large">Bibendum tellus</span> <ArrowForwardIcon /></IconButton>
+                   <Scroller className="collection__icon-block">
+                   <IconButton><SearchIcon /> <span className="body-large">Bibendum tellus</span> <ArrowForwardIcon /></IconButton>
                     <IconButton><VerifiedUserOutlinedIcon /> <span className="body-large">Cras eget</span></IconButton>
                     <IconButton><RocketLaunchOutlinedIcon /> <span className="body-large">Dolor pharetra</span></IconButton>
                     <IconButton><MonitorOutlinedIcon />  <span className="body-large">Amet, fringilla</span></IconButton>
                     <IconButton><PodcastsOutlinedIcon /><span className="body-large">Amet nibh</span></IconButton>
                     <IconButton ><TuneIcon /><span className="body-large">Sed velit</span></IconButton>
-                </div>
+                   </Scroller>
+              
                 <img src={col} alt="colection" className="collection__img"/>
             </div>
             <img src={map} width="100%"/>

@@ -1,22 +1,20 @@
 .footer {
-    padding: 48px 80px;
+    padding: 0 80px 20px 80px;
     background-color: #0F172A;
-
-    a,
-    p {
+a,p {
         color: white
-    }
-
-    hr {
-        margin-top: 48px;
     }
 }
 
 .footer__link-block {
+    padding: 48px 0;
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: space-between;
     justify-items: center;
+    border: 1px solid #334155;
+    border-left: none;
+    border-right: none;
     gap: 20px;
 
 }

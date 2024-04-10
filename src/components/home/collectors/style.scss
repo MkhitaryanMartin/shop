@@ -1,16 +1,9 @@
 .collectors {
     position: relative;
-    background-image: url("../../../assets/img/amazing-back.png"),
-        url("../../../assets/img/articles-back.png");
-    background-position:
-        right 87%,
-        left 40%;
-    background-repeat:
-        no-repeat,
-        no-repeat;
-    background-size:
-        100% auto,
-        100% 400px
+    background-image: url("../../../assets/img/articles-back.png");
+    background-position:left 40%;
+    background-repeat:no-repeat;
+    background-size: 100% 400px
 }
 
 .collectors__block {
@@ -31,19 +24,12 @@
 }
 
 .collectors__block-amazing {
-    padding: 80px;
-
-}
-
-.collectors__block_background {
-    position: absolute;
-    width: 100%;
-    height: 40%;
+    position: relative;
+    padding: 80px 80px 0 80px;
     background-color: #FEF3C7;
-    left: 0;
-    top: 50%;
-    z-index: -1;
 }
+
+
 
 .collectors__fotter {
     display: grid;
@@ -73,7 +59,16 @@
         margin: auto 0;
     }
 }
-
+.amazing__img-block{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    img{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 1250px) {
     .collectors__cards-block {
         grid-template-columns: repeat(2, 1fr);
@@ -119,5 +114,11 @@
         margin-bottom: 8px;
         text-align: center;
        }
+    }
+    .collectors__block-article {
+        background-color: white;
+    }
+    .collectors__block-amazing {
+        background-color: #FEF3C7;
     }
 }

@@ -8,9 +8,6 @@ import "./style.scss"
 export default function VideoBlock(){
     return (
         <section className="video-block">
-            <div className="deco-video__block">
-                <img src={decoVideo} alt="deco-video"/>
-            </div>
            <div className="video-block__container">
            <div>
                 <h2 className="heading-2">Why join us</h2>
@@ -25,6 +22,7 @@ export default function VideoBlock(){
             </div>
             <div className="video-block__img-block">
                 <img src={video} alt="video"/>
+                <img src={decoVideo} alt="deco-video" className="deco-video"/>
             </div>
            </div>
         </section>

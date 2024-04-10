@@ -1,0 +1,11 @@
+
+.scroller::-webkit-scrollbar {
+    display: none; 
+}
+
+@media screen and (max-width: 1350px) {
+    .scroller{
+        overflow-x: auto;
+    
+    }
+}

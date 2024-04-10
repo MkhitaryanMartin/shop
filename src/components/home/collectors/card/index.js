@@ -13,6 +13,7 @@ export default function Card({
 }) {
     return (
         <MUICard sx={{
+            boxShadow: "0px 0px 6px 0px #00000012,0px 10px 15px -3px #0000001A",
             maxWidth: "302px",
             borderRadius: "10px",
             position: "relative",

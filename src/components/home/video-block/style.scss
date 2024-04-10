@@ -27,14 +27,16 @@ p {
     }
 }
 
-.video-block__img-block {}
+.video-block__img-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.deco-video__block {
-    background-image: url("../../../assets/img/deco-video.png");
+.deco-video{
     position: absolute;
-    z-index: -1;
-    right: 90px;
-    bottom: 80px;
+    z-index: -1;   
 }
 
 @media screen and (max-width: 1350px) {
@@ -62,7 +64,7 @@ p {
     } 
 }
 .video-block__container{
-    padding: 0 5px;
+    padding: 25px 5px;
 }
 .video-block {
     padding: 160px 1px;
@@ -70,7 +72,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-    
+    .video-block {
+        padding: 30px 16px;
+    }
 }
 
 @media screen and (max-width: 410px) {

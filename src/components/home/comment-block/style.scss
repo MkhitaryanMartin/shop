@@ -1,12 +1,12 @@
 .comments{
-    display: flex;
-    justify-content: space-between;
     position: relative;
     padding-top: 40px;
-    overflow: hidden;
 }
 .comments-block__title-block{
-    margin: 80px 80px 40px 80px;
+    padding: 80px 80px 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .yelow-background{
     position: absolute;
@@ -16,4 +16,23 @@
     left: 2.5%;
     top: 0;
     z-index: -1;    
+}
+
+.scroller{
+    display: flex;
+    overflow-x: auto;
+}
+.scroller::-webkit-scrollbar {
+    display: none; 
+}
+
+@media screen and (max-width: 600px) {
+    .comments-block__title-block{
+        padding: 80px 24px 40px 24px;
+        justify-content: center;
+        text-align: center;
+    }
+    .comments-block__button-block{
+        display: none;
+    }
 }
