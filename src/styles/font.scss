@@ -146,3 +146,12 @@
         line-height: 35.2px;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .body-medium {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22.4px;
+    }
+}

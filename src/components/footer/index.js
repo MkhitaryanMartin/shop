@@ -24,8 +24,8 @@ export default function Footer(){
             </div>
             <hr/>
             <div className="footer__addres-block">
-                <p>Collers @ 2023. All rights reserved.</p>
-                <div className="footer__addres-block__link-block">
+                <p className="body-medium">Collers @ 2023. All rights reserved.</p>
+                <div className="footer__addres-block__link-block body-medium">
                     <p>Terms</p>
                     <p>Privacy</p>
                     <p>Contact</p>

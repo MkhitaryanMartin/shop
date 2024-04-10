@@ -43,6 +43,7 @@ return(
         <h2 className="heading-2">Collect More Sneakers Today</h2>
         <Button variant="medium" className="button-xl"><span>Sign up now</span></Button>
        </div>
+       <hr/>
     </section>
 )
 }

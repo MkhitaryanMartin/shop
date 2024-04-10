@@ -43,9 +43,24 @@
 }
 
 @media screen and (max-width: 900px) {
+    .footer{
+        padding: 48px 16px;
+    }
     .footer__link-block{
         grid-template-columns: repeat(2, auto);
         justify-content: space-around;
+    }
+    .footer__addres-block{
+      flex-direction: column;
+      align-items: center;
+      p{
+        margin: 10px 0;
+      }
+    }
+    .footer__addres-block__link-block{
+        p{
+            margin: 0 10px;
+        }
     }
 }
 @media screen and (max-width: 400px) {
