@@ -5,6 +5,7 @@
     line-height: 24px;
     letter-spacing: 0.5px;
 }
+
 .button-large {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -29,7 +30,7 @@
     letter-spacing: 0.5px;
 }
 
-.body-xl{
+.body-xl {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -42,6 +43,7 @@
     font-size: 18px;
     line-height: 28.8px;
 }
+
 .body-extra-large {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -55,6 +57,7 @@
     font-size: 24px;
     line-height: 38.4px;
 }
+
 .body-medium {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -82,12 +85,15 @@
     font-size: 72px;
     line-height: 79.2px;
 }
-.heading-5{
-    font-family: 'Roboto', sans-serif;;
+
+.heading-5 {
+    font-family: 'Roboto', sans-serif;
+    ;
     font-size: 32px;
     font-weight: 700;
     line-height: 35.2px;
 }
+
 .subtitle-medium {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -95,9 +101,40 @@
     line-height: 17.6px;
     text-align: left;
 }
-.subtitle-XL{
+
+.subtitle-XL {
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
     line-height: 22px;
+}
+
+@media screen and (max-width: 900px) {
+    .heading-2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35.2px;
+    }
+
+    .body-xl {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heading-1-medium {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 61.6px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .heading-1-medium {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35.2px;
+    }
 }
