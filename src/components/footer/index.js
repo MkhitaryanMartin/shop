@@ -8,11 +8,12 @@ export default function Footer(){
     return (
         <footer className="footer">
             <div className="footer__link-block">
-            <List list={footerData.product}/>
-            <List list={footerData.solutions}/>
-            <List list={footerData.support}/>
+            <List list={footerData.product} title="Product"/>
+            <List list={footerData.solutions} title="Solutions"/>
+            <List list={footerData.support}  title="Support"/>
            <div>
-           <div>
+           <div className="footer__icon-block">
+            <p>Get the App</p>
             <p><AppStoreIcon/></p>
            <p> <GooglePlayIcon/></p>
            </div>
@@ -21,6 +22,7 @@ export default function Footer(){
             </div>
            </div>
             </div>
+            <hr/>
             <div className="footer__addres-block">
                 <p>Collers @ 2023. All rights reserved.</p>
                 <div className="footer__addres-block__link-block">

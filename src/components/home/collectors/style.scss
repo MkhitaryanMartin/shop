@@ -1,38 +1,41 @@
-.collectors{
+.collectors {
     position: relative;
-    background-image:  url("../../../assets/img/amazing-back.png"),
-    url("../../../assets/img/articles-back.png");
-    background-position: 
-    right 87%,
-    left 40%;
-background-repeat: 
-    no-repeat,
-    no-repeat; 
-background-size: 
-    100% auto,
-    100% 400px
-
+    background-image: url("../../../assets/img/amazing-back.png"),
+        url("../../../assets/img/articles-back.png");
+    background-position:
+        right 87%,
+        left 40%;
+    background-repeat:
+        no-repeat,
+        no-repeat;
+    background-size:
+        100% auto,
+        100% 400px
 }
 
-.collectors__block{
-    .collectors__button_p{
+.collectors__block {
+    .collectors__button_p {
         margin-right: 16px;
     }
 }
-.collectors__cards-block{
-    display: flex;
-    justify-content: space-between;
+
+.collectors__cards-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
 }
 
 
-.collectors__block-article{
-    padding: 80px 80px 0 80px;   
+.collectors__block-article {
+    padding: 80px 80px 0 80px;
 }
-.collectors__block-amazing{
-    padding:  80px ;    
-    
+
+.collectors__block-amazing {
+    padding: 80px;
+
 }
-.collectors__block_background{
+
+.collectors__block_background {
     position: absolute;
     width: 100%;
     height: 40%;
@@ -41,24 +44,79 @@ background-size:
     top: 50%;
     z-index: -1;
 }
-.collectors__fotter{
-    display: flex;
+
+.collectors__fotter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    grid-gap: 20px;
     justify-content: space-between;
     padding: 80px;
     background-color: #0F172A;
-    h2{
+    h2 {
         color: white;
     }
-    button{
-        span{
+    button {
+        max-width: 333px;
+        justify-self: flex-end;
+        span {
             padding: 0 24px;
         }
     }
 }
 
-.collector__title-block{
+.collector__title-block {
     display: flex;
     justify-content: space-between;
     padding: 80px 0;
+    h2{
+        margin: auto 0;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .collectors__cards-block {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        justify-items: center;
+    }
+
+ 
+}
+
+@media screen and (max-width: 900px) {
+    .collectors__block-article {
+        padding: 80px 24px 0 24px;
+    }
+
+    .collectors__block-amazing {
+        padding: 80px 24px 80px 24px;
+
+    }
+    .collectors__fotter {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 80px 24px;
+        text-align: center;
+        button{
+            justify-self: center;
+            span {
+                padding: 0px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .collectors__cards-block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .collector__title-block {
+       flex-direction: column;
+       align-items: center;
+       padding: 32px 0;
+       h2{
+        margin-bottom: 8px;
+       }
+    }
 }

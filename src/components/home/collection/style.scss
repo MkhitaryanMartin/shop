@@ -9,7 +9,6 @@
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 100% 100%; 
-    height: 600px;
     padding:  0 80px;
 }
 
@@ -64,7 +63,7 @@
         padding: 32px 16px;
     }
     .collection__filter-block{
-
+       
     }
     .collection__img{
         width: 100%;
@@ -75,21 +74,3 @@
 }
 
 
-// .collection__filter-block{
-//     height: 1700px;
-//        position: relative;
-//        padding: 0 80px;
-//        overflow: hidden;
-//        background-image: 
-//        url('../../../assets/img/waves.png'),
-//            url('../../../assets/img/waves-section.png');
-//        background-position:
-//            top center,
-//            left bottom;
-//        background-repeat:
-//            no-repeat,
-//            no-repeat;
-//        background-size:
-//            100% auto,
-//            100% auto;
-//    }

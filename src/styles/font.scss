@@ -109,6 +109,14 @@
     line-height: 22px;
 }
 
+@media screen and (max-width: 1200px) {
+    .heading-2 {
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 61.6px;;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .heading-2 {
         font-size: 32px;
