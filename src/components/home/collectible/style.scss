@@ -6,36 +6,30 @@
         linear-gradient(to top left, #FEF3C7 50%, transparent 50%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-
-
-.collectible__container,
-.collectible__icon-block {
+    display: flex;
+    justify-content: center;
+   &__container,
+&__icon-block {
     display: grid;
     align-items: center;
     justify-content: space-between;
 }
-
-.collectible__img-block {
+&__img-block {
     justify-self: flex-end;
 }
-
-.collectible__container {
+&__container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
 }
-
-.collectible__icon-block {
+&__icon-block {
     grid-template-columns: repeat(3, minmax(200px, 373px));
     grid-gap: 20px;
 }
-
-.collectible__text-block__text {
+&__text-block__text {
     margin: 30px 0;
     max-width: 714px;
 }
-
-.collectible__button-block {
+&__button-block {
     display: flex;
     align-items: center;
 
@@ -53,38 +47,47 @@
         }
     }
 }
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 1200px) {
-    .collectible__container {
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        text-align: center;
-    }
-
-    .collectible__icon-block {
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        text-align: center;
-    }
-    .collectible__img-block {
-        justify-self: center;
-    }
-    .collectible__button-block{
-        justify-content: center;
+    .collectible{
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            text-align: center;
+        }
+    
+        &__icon-block {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            text-align: center;
+        }
+        &__img-block {
+            justify-self: center;
+        }
+        &__button-block{
+            justify-content: center;
+        }
     }
 }
 
 @media screen and (max-width: 600px) {
-    .collectible__text-block {
+ .collectible{
+    &__text-block {
         text-align: center;
     }
 
-    .collectible__button-block {
+    &_button-block {
         justify-content: center;
     }
 
-    .collectible__img-block {
+    &__img-block {
         display: flex;
         justify-content: center;
 
@@ -93,13 +96,13 @@
         }
     }
 
-    .collectible__icon-block {
+    &__icon-block {
         text-align: center;
     }
+ }
 }
 
 @media screen and (max-width: 400px) {
-
     .collectible__button-block {
         flex-direction: column;
         align-items: center;

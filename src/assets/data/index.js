@@ -54,3 +54,10 @@ export const footerData ={
     solutions:["Brainstorming","Ideation", "Wireframing", "Research", "Design"],
     support:["Contact Us", "Developers", "Documentation", "Integrations","Reports"]
 }
+
+export const points = [
+    { longitude: -100, latitude: 40 }, // Координаты для центра США
+    { longitude: -106, latitude: 56 }, // Координаты для Канады
+    { longitude: 20, latitude: 0 },    // Координаты для Африки
+    { longitude: 133, latitude: -27 }   // Координаты для Австралии
+  ];

@@ -4,31 +4,36 @@
     padding: 80px;
     position: relative;
     background-color: #0F172A;
-}
-
-.best__header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    button{
-        max-width: 233px;
-        justify-self: flex-end;
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        width: 100%;
+        max-width: 1600px;
+        button{
+            max-width: 233px;
+            justify-self: flex-end;
+        }
+    }
+    &__title {
+        color: #FFFFFF;
+    }
+    &__cards-block {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-items: center;
+        justify-content: space-between;
+        align-items: center;
+        grid-gap: 16px;
+        margin-top: 80px;
+        width: 100%;
+        max-width: 1600px;
     }
 }
 
-.best__title {
-    color: #FFFFFF;
-}
-
-.best__cards-block {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-items: center;
-    justify-content: space-between;
-    align-items: center;
-    grid-gap: 16px;
-    margin-top: 80px;
-}
 
 .position{
     position: absolute;
@@ -73,26 +78,20 @@
 }
 
 @media screen and (max-width: 900px) {
-    .best__cards-block {
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        justify-items: center;
-
-    }
-    .best__header {
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 24px;
-        text-align: center;
-        button{
-            justify-self: center;
+    .best{
+        &__cards-block {
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            justify-items: center;
+    
+        }
+        &__header {
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 24px;
+            text-align: center;
+            button{
+                justify-self: center;
+            }
         }
     }
-}
-
-@media screen and (max-width: 600px) {
-    
-}
-
-@media screen and (max-width: 400px) {
- 
 }

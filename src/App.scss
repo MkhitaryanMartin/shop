@@ -4,6 +4,15 @@
   padding: 0 80px;
 }
 
+.App{
+  display: flex;
+  justify-content: center;
+}
+.root-container{
+  width: 100%;
+  max-width: 1920px;
+  min-width: 270px;
+}
 @media screen and (max-width: 600px) {
   .container{
     padding: 0 16px;

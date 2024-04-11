@@ -1,13 +1,16 @@
 .comments{
     position: relative;
     padding-top: 40px;
-}
-.comments-block__title-block{
-    padding: 80px 80px 40px 80px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    &-block__title-block{
+        padding: 80px 80px 40px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
 .yelow-background{
     position: absolute;
     width: 95%;
@@ -27,12 +30,14 @@
 }
 
 @media screen and (max-width: 600px) {
-    .comments-block__title-block{
+   .comments-block{
+    &__title-block{
         padding: 80px 24px 40px 24px;
         justify-content: center;
         text-align: center;
     }
-    .comments-block__button-block{
+    &__button-block{
         display: none;
     }
+   }
 }

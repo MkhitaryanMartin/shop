@@ -1,55 +1,61 @@
 .video-block {
     padding: 160px 80px;
     position: relative;
-}
+    display: flex;
+    justify-content: center;
 
-.video-block__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 32px;
-    align-items: center;
-    padding: 73px 80px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px 0px #00000012,
-        0px 20px 25px -5px #0000001A;
-
-}
-
-.video-block__text-block {
-    margin: 24px 0;
-p {
-        display: flex;
+    &__container {
+        width: 100%;
+        max-width: 1600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
         align-items: center;
+        padding: 73px 80px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px 0px #00000012,
+            0px 20px 25px -5px #0000001A;
 
-        svg {
-            margin-right: 6px;
+    }
+
+    &__text-block {
+        margin: 24px 0;
+
+        p {
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 6px;
+            }
         }
+    }
+
+    &__img-block {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-.video-block__img-block {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.deco-video{
+.deco-video {
     position: absolute;
-    z-index: -1;   
+    z-index: -1;
 }
 
 @media screen and (max-width: 1350px) {
     .video-block {
         padding: 160px 16px;
-    }
-    .video-block__container{
-        padding: 0 16px;
+
+        &__container {
+            padding: 0 16px;
+        }
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .video-block__container{
+    .video-block__container {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         justify-items: center;
@@ -58,17 +64,19 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-.video-block__img-block{
-    img{
-        width: 100%;
-    } 
-}
-.video-block__container{
-    padding: 25px 5px;
-}
-.video-block {
-    padding: 160px 1px;
-}
+    .video-block {
+        padding: 160px 1px;
+
+        &__img-block {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__container {
+            padding: 25px 5px;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -79,6 +87,8 @@ p {
 
 @media screen and (max-width: 410px) {
     .video-block__text-block {
-    p {align-items: flex-start;}
+        p {
+            align-items: flex-start;
+        }
     }
 }

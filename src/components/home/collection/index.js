@@ -7,11 +7,17 @@ import MonitorOutlinedIcon from '@mui/icons-material/MonitorOutlined';
 import PodcastsOutlinedIcon from '@mui/icons-material/PodcastsOutlined';
 import TuneIcon from '@mui/icons-material/Tune';
 import IconButton from "./IconButton";
-import map from "../../../assets/img/waves-section.png"
-import "./style.scss"
 import Scroller from "../../scroller";
+import Map from "../../map";
+import { points } from "../../../assets/data";
+import mapImg from "../../../assets/img/mapImg.png"
+import "./style.scss"
 
 export default function Collection() {
+
+const handleClick = (index)=>{
+
+}
     return (
         <section className="collection">
            <div className="collection__title-block">
@@ -32,7 +38,12 @@ export default function Collection() {
               
                 <img src={col} alt="colection" className="collection__img"/>
             </div>
-            <img src={map} width="100%"/>
+            {/* <img src={map} width="100%"/> */}
+            <div className="collection__map-block">
+            <Map points={points}/>
+            <img src={mapImg} alt="img" className="collection__map-block__img"/>
+            </div>
+            
         </section>
     )
 }
