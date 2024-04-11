@@ -5,8 +5,9 @@
     background-repeat:no-repeat;
     background-size: 100% 400px;
     &__block {
-        .collectors__button_p {
+        &__button_p {
             margin-right: 16px;
+            
         }
     }
     &__cards-block {

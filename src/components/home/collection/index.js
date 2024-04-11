@@ -12,11 +12,17 @@ import Map from "../../map";
 import { points } from "../../../assets/data";
 import mapImg from "../../../assets/img/mapImg.png"
 import "./style.scss"
+import { useState } from "react";
 
 export default function Collection() {
+    const [isShow, setIsShow]= useState(false)
 
 const handleClick = (index)=>{
-
+    if(points[index] === points[0]){
+        setIsShow(true)
+    }else{
+        setIsShow(false)
+    }
 }
     return (
         <section className="collection">
@@ -40,8 +46,8 @@ const handleClick = (index)=>{
             </div>
             {/* <img src={map} width="100%"/> */}
             <div className="collection__map-block">
-            <Map points={points}/>
-            <img src={mapImg} alt="img" className="collection__map-block__img"/>
+            <Map points={points} onClick={handleClick}/>
+            {/* <img src={mapImg} alt="img" className={`collection__map-block__img ${isShow && "collection__map-block__img_show"}`}/> */}
             </div>
             
         </section>

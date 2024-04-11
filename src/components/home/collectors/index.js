@@ -10,30 +10,30 @@ export default function Collectors() {
     return (
         <section className="collectors">
             <div className="collectors__block collectors__block-article">
-                <div className="collector__title-block">
+                <div className="collectors__title-block">
                     <h2 className="heading-2">Articles by Collectors</h2>
-                    <Button variant="text">More Articles <ArrowForwardIcon /></Button>
+                    <Button variant="text">More Articles <ArrowForwardIcon sx={{ml:"16px"}}/></Button>
                 </div>
                 <div className="collectors__cards-block">
                     {
                         articles.map((item) => {
                             return <Card text={item.text} title={item.title} color="black" justifyContent="flex-start" image={item.img} key={item.img}>
-                                <Button variant="text">Read article <ArrowForwardIcon /></Button>
+                                <Button variant="text">Read article <ArrowForwardIcon sx={{ml:"16px"}}/></Button>
                             </Card>
                         })
                     }
                 </div>
             </div>
             <div className="collectors__block collectors__block-amazing">
-                <div className="collector__title-block">
+                <div className="collectors__title-block">
                     <h2 className="heading-2">Amazing events</h2>
-                    <Button variant="text">Explore Articles <ArrowForwardIcon /></Button>
+                    <Button variant="text">Explore Articles <ArrowForwardIcon sx={{ml:"16px"}}/></Button>
                 </div>
                 <div className="collectors__cards-block">
                     {
                         amazing.map((item) => {
                             return <Card subTitle={item.subTitle} headerTitle={item.title} color="black" justifyContent="flex-start" image={item.img} key={item.img}>
-                                <Button variant="text">Buy Tickets<ArrowForwardIcon /></Button>
+                                <Button variant="text">Buy Tickets<ArrowForwardIcon sx={{ml:"16px"}}/></Button>
                             </Card>
                         })
                     }
