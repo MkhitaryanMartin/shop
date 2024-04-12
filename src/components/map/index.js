@@ -23,7 +23,7 @@ const Map = ({ points, onClick }) => {
     <div className="map"  onClick={(e)=>{handleMarkerClick(e,undefined)
     }}>
        {selectedPointIndex !== undefined && <img src={count} className="count-img" alt=""/>}
-      <ComposableMap>
+      <ComposableMap style={{minWidth:"100%"}}>
         <Geographies geography="/features.json">
           {({ geographies }) =>
             geographies.map((geo) => (
