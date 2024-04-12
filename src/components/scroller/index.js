@@ -4,7 +4,8 @@ import "./style.css"
 
 function Scroller({
     children,
-    className
+    className,
+    onClick=()=>{}
 }){
     const categoryListRef = useRef(null);
     const [isDown, setIsDown] = useState(false);
@@ -37,6 +38,7 @@ function Scroller({
             onMouseLeave={handleMouseUp}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
+            onClick={onClick}
             >
                {children}
             </div>
