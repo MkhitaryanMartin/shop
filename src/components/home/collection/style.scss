@@ -27,6 +27,9 @@
     }
     &__map-block{
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &__img{
             position: absolute;
             top: 90px;

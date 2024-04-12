@@ -16,14 +16,10 @@ import { useState } from "react";
 import count from "../../../assets/img/count.png"
 
 export default function Collection() {
-    const [isShow, setIsShow]= useState(false)
+    const [isShow, setIsShow]= useState(undefined)
 
 const handleClick = (index)=>{
-    if(points[index] === points[0]){
-        setIsShow(true)
-    }else{
-        setIsShow(false)
-    }
+   setIsShow(index)
 }
     return (
         <section className="collection">
@@ -45,10 +41,12 @@ const handleClick = (index)=>{
               
                 <img src={col} alt="colection" className="collection__img"/>
             </div>
-            {/* <img src={map} width="100%"/> */}
             <div className="collection__map-block">
-            <Map points={points} onClick={handleClick}/>
-            {/* <img src={mapImg} alt="img" className={`collection__map-block__img ${isShow && "collection__map-block__img_show"}`}/> */}
+           {isShow !== undefined ? <div style={{color:"white", position:"absolute", zIndex:1}}> 
+        <p className="heading-1-l">11,658,467</p>
+        <h2 className="heading-2">Shoes Collected</h2>
+        </div>:""}
+            <Map points={points} onClick={handleClick} selectedPointIndex={isShow}/>
             </div>
             
         </section>

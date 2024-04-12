@@ -10,20 +10,20 @@ const CustomMarker = ({ isSelected, onClick }) => (
   </g>
 );
 
-const Map = ({ points, onClick }) => {
-  const [selectedPointIndex, setSelectedPointIndex] = useState(undefined);
+const Map = ({ points, onClick, selectedPointIndex }) => {
+
 
   const handleMarkerClick = (e,index) => {
     e.stopPropagation()
-    setSelectedPointIndex(index);
     onClick(index);
+    console.log(index)
   };
-
+console.log(selectedPointIndex)
   return (
     <div className="map"  onClick={(e)=>{handleMarkerClick(e,undefined)
     }}>
-       {selectedPointIndex !== undefined && <img src={count} className="count-img" alt=""/>}
-      <ComposableMap style={{minWidth:"100%"}}>
+    <div className="map__container">
+      <ComposableMap >
         <Geographies geography="/features.json">
           {({ geographies }) =>
             geographies.map((geo) => (
@@ -39,7 +39,10 @@ const Map = ({ points, onClick }) => {
         ))}
       </ComposableMap>
     </div>
+    </div>
   );
 };
 
 export default Map;
+
+{/* <img src={count} className="count-img" alt=""/> */}
