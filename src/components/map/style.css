@@ -4,5 +4,22 @@
   }
   
 .map{
+  position: relative;
     background-color: #78350F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.map__marker g circle{
+  fill:#D9F99D;
+  
+}
+
+
+
+.count-img{
+  position: absolute;
+ 
 }
