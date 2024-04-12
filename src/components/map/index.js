@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
 import mapImg from "../../assets/img/mapImg.png";
 import "./style.css";
+import Scroller from "../scroller";
 
 const CustomMarker = ({ isSelected, onClick }) => (
   <g>
@@ -19,7 +20,7 @@ const Map = ({ points, onClick, selectedPointIndex }) => {
   };
 
   return (
-    <div className="map"  onClick={(e)=>{handleMarkerClick(e,undefined)
+    <Scroller className="map"  onClick={(e)=>{handleMarkerClick(e,undefined)
     }}>
     <div className="map__container">
       <ComposableMap >
@@ -38,7 +39,7 @@ const Map = ({ points, onClick, selectedPointIndex }) => {
         ))}
       </ComposableMap>
     </div>
-    </div>
+    </Scroller>
   );
 };
 
