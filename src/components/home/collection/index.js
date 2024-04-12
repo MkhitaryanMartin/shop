@@ -10,10 +10,8 @@ import IconButton from "./IconButton";
 import Scroller from "../../scroller";
 import Map from "../../map";
 import { points } from "../../../assets/data";
-import mapImg from "../../../assets/img/mapImg.png"
 import "./style.scss"
 import { useState } from "react";
-import count from "../../../assets/img/count.png"
 
 export default function Collection() {
     const [isShow, setIsShow]= useState(undefined)

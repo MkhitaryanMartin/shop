@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
 import mapImg from "../../assets/img/mapImg.png";
-import count from "../../assets/img/count.png"
 import "./style.css";
 
 const CustomMarker = ({ isSelected, onClick }) => (
@@ -18,7 +17,7 @@ const Map = ({ points, onClick, selectedPointIndex }) => {
     onClick(index);
     console.log(index)
   };
-console.log(selectedPointIndex)
+
   return (
     <div className="map"  onClick={(e)=>{handleMarkerClick(e,undefined)
     }}>
@@ -45,4 +44,4 @@ console.log(selectedPointIndex)
 
 export default Map;
 
-{/* <img src={count} className="count-img" alt=""/> */}
+
