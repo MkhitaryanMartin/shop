@@ -57,9 +57,7 @@ export const footerData = {
 
 export const points = [
     { longitude: -100, latitude: 40 },
-    // { longitude: 20, latitude: 0 },
-    { longitude: 133, latitude: -27 },
     { longitude: 116.4074, latitude: 39.9042 },
-    { longitude: -149.9003, latitude: 61.2181 },
     { longitude: 2.3522, latitude: 48.8566 },
+    { longitude: 31.2357, latitude: 30.0444 },
 ];
