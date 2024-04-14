@@ -1,7 +1,8 @@
 .comment-card{
     min-width: 384px;
+    max-width: 384px;
     padding: 32px;
-    height: 430px;
+    min-height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,24 +10,25 @@
     border: 1px solid #E2E8F0;
     box-shadow: 0px 0px 6px 0px #00000012,
      0px 10px 15px -3px #0000001A;
-     margin: 0 12px 0 12px;
      background: #FFFFFF;
-}
-.comment-card__logo{
-    display: flex;
-    align-items: center;
-    span{
-        margin-left: 10px;
+     &__logo{
+        display: flex;
+        align-items: center;
+        span{
+            margin-left: 10px;
+        }
+    }
+    &__avatar-block{
+        display: flex;
+        align-items: center;
+    
+    }
+    &__text{
+        margin: 16px 0;
     }
 }
-.comment-card__avatar-block{
-    display: flex;
-    align-items: center;
 
-}
-.comment-card__text{
-    margin: 16px 0;
-}
+
 .job-title{
     color: #475569;
 }
@@ -37,8 +39,8 @@
         height: auto;
         padding: 15px 15px;
         text-align: center;
-    }
-    .comment-card__logo{
-       justify-content: center;
+        &__logo, &__avatar-block{
+            justify-content: center;
+         }
     }
 }
