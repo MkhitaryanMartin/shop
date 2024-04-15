@@ -16,7 +16,7 @@ const Map = ({ points, onClick, selectedPointIndex }) => {
   const handleMarkerClick = (e,index) => {
     e.stopPropagation()
     onClick(index);
-    console.log(index)
+ 
   };
 
   return (
@@ -27,7 +27,7 @@ const Map = ({ points, onClick, selectedPointIndex }) => {
         <Geographies geography="/features.json">
           {({ geographies }) =>
             geographies.map((geo) => (
-              <Geography key={geo.rsmKey} geography={geo} />
+              <Geography key={geo.rsmKey} geography={geo} fill={["CHN","USA","ZAF", "NGA","EGY","ETH","BRA",].includes(geo.id) ? "#96440C":"#D97706"}/>
             ))
           }
         </Geographies>

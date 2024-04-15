@@ -1,7 +1,7 @@
 
-  .map path {
+  /* .map path {
     fill: #D97706;
-  }
+  } */
   
 .map{
   position: relative;
@@ -63,4 +63,5 @@
   background-color: #78350F;
   min-width: 600px;
   width: 100%;
+  left: -10px;
 }
