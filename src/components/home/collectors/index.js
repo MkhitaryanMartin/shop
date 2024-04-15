@@ -3,6 +3,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { amazing, articles } from "../../../assets/data";
 import amazingImg from "../../../assets/img/amazing-back.png"
 import Card from "./card";
+import backlights from "../../../assets/img/backlights.png"
 import "./style.scss"
 
 
@@ -42,6 +43,7 @@ export default function Collectors() {
                     <img src={amazingImg}/>
                 </div>
             </div>
+            <img src={backlights} className="collectors__backlights" height="250"/>
             <div className="collectors__fotter">
                 <h2 className="heading-2">Collect More Sneakers Today</h2>
                 <Button variant="medium" className="button-xl"><span>Sign up now</span></Button>

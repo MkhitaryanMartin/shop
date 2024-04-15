@@ -12,7 +12,8 @@
     }
     &__cards-block {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 302px);
+        justify-content: space-between;
         justify-items: center;
         grid-gap: 20px;
     }
@@ -38,6 +39,8 @@
         button {
             max-width: 333px;
             justify-self: flex-end;
+            background: none;
+            z-index: 2;
             span {
                 padding: 0 24px;
             }
@@ -50,6 +53,13 @@
         h2{
             margin: auto 0;
         }
+    }
+    &__backlights{
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        z-index: 1;
+
     }
 }
 
@@ -64,13 +74,19 @@
     }
 }
 @media screen and (max-width: 1250px) {
-    .collectors__cards-block {
+
+
+ .collectors {
+    &__cards-block {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         justify-items: center;
     }
-
- 
+    &__backlights{
+        display: none;
+    
+    }
+ }   
 }
 
 @media screen and (max-width: 900px) {
