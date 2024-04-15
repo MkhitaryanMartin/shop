@@ -33,13 +33,7 @@ export const comments = [
     { compName: "SHELLS", text: "Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.", logo: logoIcon.ShelsIcon, avatar: shells, name: "Hellena John", jobTitle: "Co-founder" },
     { compName: "ArtVenue", text: "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.", logo: logoIcon.ArtVenueIcon, avatar: artVenue, name: "David Oshodi", jobTitle: "Manager" },
     { compName: "WA", text: "Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.", logo: logoIcon.WaIcon, avatar: wa, name: "name", jobTitle: "job" },
-    { compName: "Zoomerr", text: "Non risus viverra enim, quis. Eget vitae arcu vivamus sit tellus, viverra turpis lorem. Varius a turpis urna id porttitor.", logo: logoIcon.ZoomerIcon, avatar: zommer, name: "Hellen Jummy", jobTitle: "Team Lead" },
-    { compName: "SHELLS", text: "Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.", logo: logoIcon.ShelsIcon, avatar: shells, name: "Hellena John", jobTitle: "Co-founder" },
-    { compName: "ArtVenue", text: "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.", logo: logoIcon.ArtVenueIcon, avatar: artVenue, name: "David Oshodi", jobTitle: "Manager" },
-    { compName: "WA", text: "Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.", logo: logoIcon.WaIcon, avatar: wa, name: "name", jobTitle: "job" },
-    { compName: "Zoomerr", text: "Non risus viverra enim, quis. Eget vitae arcu vivamus sit tellus, viverra turpis lorem. Varius a turpis urna id porttitor.", logo: logoIcon.ZoomerIcon, avatar: zommer, name: "Hellen Jummy", jobTitle: "Team Lead" },
-    { compName: "SHELLS", text: "Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.", logo: logoIcon.ShelsIcon, avatar: shells, name: "Hellena John", jobTitle: "Co-founder" },
-    { compName: "ArtVenue", text: "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.", logo: logoIcon.ArtVenueIcon, avatar: artVenue, name: "David Oshodi", jobTitle: "Manager" },
+    
 ]
 
 export const articles = [
