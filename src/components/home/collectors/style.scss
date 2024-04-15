@@ -29,7 +29,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        grid-gap: 20px;
+        grid-gap: 10px;
         justify-content: space-between;
         padding: 80px;
         background-color: #0F172A;
@@ -73,7 +73,7 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1600px) {
 
 
  .collectors {
